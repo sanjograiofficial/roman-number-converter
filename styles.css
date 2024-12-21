@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .outer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    border: 2px solid black;
+    padding: 5px;
+    background-color: #ababab;
+    height: 150px;
+    width: 400px;
+    text-align: center;
+  }
+  #output{
+    margin-top: 5px;
+    border: 1px solid;
+    display: none;
+    padding: 5px;
+  }
+  
+  #number{
+    padding: 5px;
+  }
+  
+  button{
+    padding: 5px;
+    background-color: #0ab0ab;
+    cursor: pointer;
+  
+    &:hover{
+      background-color: #bbabab;
+    }
+    &:active{
+      background-color: #bbccdd
+    }
+  }
