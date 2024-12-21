@@ -19,8 +19,6 @@ body{
   }
   #output{
     margin-top: 5px;
-    border: 1px solid;
-    display: none;
     padding: 5px;
   }
   
@@ -32,11 +30,10 @@ body{
     padding: 5px;
     background-color: #0ab0ab;
     cursor: pointer;
-  
-    &:hover{
-      background-color: #bbabab;
-    }
-    &:active{
-      background-color: #bbccdd
-    }
+  }
+  button:hover{
+    background-color: #bbabab;
+  }
+  button:active{
+    background-color: #bbccdd
   }

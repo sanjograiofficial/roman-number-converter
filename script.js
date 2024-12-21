@@ -36,20 +36,20 @@ const romCon = (input)=>{
 
 
 //event listener
-btn.addEventListener('click', ()=>{
-  result.style.display = 'block'
-  if(int.value == ''){
-    result.innerText = "Please enter a valid number"
-  }
-  else if(int.value <= -1){
-    result.innerText = "Please enter a number greater than or equal to 1"
-  }
-  else if(int.value >= 4000){
-    result.innerText = "Please enter a number less than or equal to 3999"
-  }
-  else{
-    const out = romCon(int.value);
-    result.innerText = "Roman Number: " + out;
-  }
-}
+btn.addEventListener('click', (e)=>{
+    e.preventDefault();
+        if(int.value == ''){
+            result.innerText = "Please enter a valid number"
+        }
+        else if(int.value <= -1){
+            result.innerText = "Please enter a number greater than or equal to 1"
+        }
+        else if(int.value >= 4000){
+            result.innerText = "Please enter a number less than or equal to 3999"
+        }
+        else{
+            const out = romCon(int.value);
+            result.innerText = "Roman Number: " + out;
+        }
+    }
 )
